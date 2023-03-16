@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in page
+  </title>
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <img src="./assets/images/bg-sidebar-desktop.svg" id="sidebar">
+
+
+
+    <div class="step1">
+      <div id="i1">
+        1
+      </div>
+      <div id="s1">
+        STEP 1
+      </div>
+      <div id="s01">
+        YOUR INFO
+      </div>
+      <div id="i2">
+        2
+      </div>
+      <div id="s2">
+        STEP 2
+      </div>
+      <div id="s02">
+        SELECT PLAN
+      </div>
+      <div id="i3">
+        3
+      </div>
+      <div id="s3">
+        STEP 3
+      </div>
+      <div id="s03">
+        ADD-ONS
+      </div>
+      <div id="i4">
+        4
+      </div>
+      <div id="s4">
+        STEP 4
+      </div>
+      <div id="s04">
+        SUMMARY
+      </div>
+    </div>
+    
+    <div class="page1">
+    <div class="step2">
+      <div id="pi">Personal Info</div>
+      <div id="pii">Please provide your name, email address and phone number</div>
+    </div>
+    <div class="detail">
+      <div id="name">
+      Name
+      </div>
+
+    <div id="out1"></div>
+
+      <input type="text" id="block1" class="block" name placeholder="     Your name">
+    <div id="ea">
+      Email Address
+    </div>
+
+    <div id="out2"> </div>
+
+    <input type="text" id="block2" class="block" name placeholder="   Your Email">
+    <div id="pn">
+      Phone Number
+    </div>
+
+    <div id="out3"></div>
+
+    <input type="text" id="block3" class="block" name placeholder="    +1 234 567 890">
+    </div>
+    <div id="laststep" type="button" onclick="checker()" c>
+      Next Step
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="page2">
+    <div id="pi2">Select your plan</div>
+    <div id="pii2">You have the option of monthly or yearly billing</div>
+    <div >
+      <div id="sec1" class="sec" onclick="sel1()"><img src="./assets/images/icon-arcade.svg" id="img1">   <div id="name1">Arcade </div><br> <div id="name11">$9/mo</div></div>
+      <div id="sec2" class="sec" onclick="sel2()"> <img src="./assets/images/icon-advanced.svg" id="img2"><div id="name2">Advanced</div> <br> <div id="name22">$12/mo </div></div>
+      <div id="sec3" class="sec" onclick="sel3()"> <img src="./assets/images/icon-pro.svg" id="img3"> <div id="name3">pro</div> <br> <div id="name33">$15/mo</div></div>
+    </div>
+    
+    <div id="monthly">
+    Yearly
+    </div>
+    
+    <input type="checkbox" id="switch" class="checkbox" />  
+    <label for="switch" class="toggle" onclick="toggleButton()">
+
+      <div id="yearly">
+      Monthly
+    </div>
+      <div id="back1" onclick="back1()">Go Back</div>
+      <div id="next2" onclick="next2()">Next Step</div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="page3">
+    <div id="pi3">Pick add-ons</div>
+    <div id="pii3">Add-ons help enhance your gaming experience</div>
+    <div class="khand">
+      <div id="khand1"> <input type="checkbox" onclick="khand1()" class="c31" ><h3>Online service</h3><p>Access to multiplayer games</p> <h4 id="k1">+$1/mon</h4> </div>
+      <div id="khand2"><input type="checkbox" onclick="khand2()" class="c31"><h3>Larger storage</h3><p>Extra 1TB od cloud space</p><h4 id="k2">+$2/mon</h4></div>
+      <div id="khand3"><input type="checkbox" onclick="khand3()" class="c31"><h3>Customizable profile</h3><p>Custom theme on your profile</p><h4 id="k3">+$2/mon</h4></div>
+      <div id="back2" onclick="back2()">Go Back</div>
+      <div id="next3" onclick="next3()">Next Step</div>
+    </div>
+    </div>
+
+
+
+
+
+
+     <div class="page4">
+      <div id="pi4">Finishing up</div>
+      <div id="pii4">Double check everything looks OK before confirming</div>
+      <div class="jai">
+        <div id="selector"> Arcade </div>  <div id="duration">  (Monthly) </div>
+        <div id="paisa" ><div id="dud0">$</div><div id="va0">9</div><div id="du0">/mo</div></div>
+        <div id="change" onclick="change()"><u> Change </u></div>
+        <hr>
+        <div id="kkk1"></div> <div id="dud1"></div><div id="va1"></div> <div id="du1"></div>
+        <div id="kkkk2"></div> <div id="dud2"></div><div id="va2"></div> <div id="du2"></div>
+        <div id="kkk3"></div><div id="dud3"></div> <div id="va3"></div> <div id="du3"></div>
+        <div id="kkk4">Total</div><div id="kkk41">(per month)</div><div id="dud4">$</div> <div id="va4"></div> <div id="du4">/mo</div>
+      </div>
+      <div id="back3" onclick="back3()">Go Back</div>
+      <div id="next4" onclick="next4()">Confirm</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page5">
+      <img src="./assets/images/icon-thank-you.svg" id="cent">
+      <div id="pi5">Thank you!</div>
+      <div id="pii5">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support @loremgaming.com. </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
